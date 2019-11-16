@@ -35,6 +35,7 @@
 		{ "allowAllPropertiesOnSameLine": true }
 	  ],
 	  "no-unneeded-ternary": ["error", { "defaultAssignment": true }],
+	  "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
 	  "keyword-spacing": ["error", { "before": true, "after": true }],
 	  "space-infix-ops": ["error", { "int32Hint": false }],
 	  "object-curly-newline": [
