@@ -1,6 +1,6 @@
 import React from 'react';
 
-const display = ({value}) => {
+function display( {value} ) {
   return (
     <div className='display'>
       <div className='display-value'>
@@ -8,6 +8,6 @@ const display = ({value}) => {
       </div>
     </div>
   );
-};
+}
 
 export default display;

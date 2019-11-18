@@ -1,6 +1,6 @@
 import React from 'react';
 
-const button = (props) => {
+function button(props) {
   return (
     <div>
       <h1>
@@ -8,6 +8,6 @@ const button = (props) => {
       </h1>
     </div>
   );
-};
+}
 
 export default button;

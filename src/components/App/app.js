@@ -1,7 +1,5 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import Display from '../display';
-// eslint-disable-next-line no-unused-vars
 import ButtonPanel from '../buttonPanel';
 
 
