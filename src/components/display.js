@@ -1,6 +1,6 @@
 import React from 'react';
 
-function display({value}) {
+function display({ value }) {
   return (
     <div className='display'>
       <div className='display-value'>
