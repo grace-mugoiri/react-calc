@@ -1,13 +1,13 @@
 import React from 'react';
-import Display from '../display';
-import ButtonPanel from '../buttonPanel';
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
 
 
 class App extends React.Component {
   render() {
     return (
       <div className='app'>
-        <Display value={'display pane'} />
+        <Display value={'display calculator panel'} />
         <ButtonPanel />
       </div>
     );
