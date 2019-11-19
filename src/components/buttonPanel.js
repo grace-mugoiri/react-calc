@@ -4,7 +4,7 @@ import Button from './Button';
 class ButtonPanel extends React.Component {
   render() {
     return (
-      <div>
+      <div id='button-panel'>
         <div className='Group1'>
           <Button name = 'AC' />
           <Button name = '+/-' />
