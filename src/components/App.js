@@ -6,7 +6,7 @@ import ButtonPanel from './ButtonPanel';
 class App extends React.Component {
   render() {
     return (
-      <div className='app'>
+      <div id='app'>
         <Display value={'display calculator panel'} />
         <ButtonPanel />
       </div>
