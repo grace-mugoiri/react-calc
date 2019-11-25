@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import Button from './Button';
 
 class ButtonPanel extends React.Component {
@@ -9,7 +10,7 @@ class ButtonPanel extends React.Component {
           <Button name = 'AC' color='##e0e0e0'/>
           <Button name = '+/-' color='##e0e0e0'/>
           <Button name = '%' color='##e0e0e0'/>
-          <Button name = '+' />
+          <Button name = '÷' />
         </div>
 
         <div className='group-2'>
