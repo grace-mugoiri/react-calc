@@ -8,7 +8,8 @@ class Button extends React.Component {
       <button
         id='button'
         className={widthStyle}
-        style={{ backgroundColor: this.props.color }}>
+        style={{ backgroundColor: this.props.color }}
+        onClick={() => this.props.clickHandler(this.props.name)}>
         {this.props.name}
       </button>
     );
