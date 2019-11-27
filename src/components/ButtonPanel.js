@@ -2,7 +2,8 @@
 import React from 'react';
 import Button from './Button';
 
-const ButtonPanel = (props) => {
+// eslint-disable-next-line arrow-parens
+const ButtonPanel = props => {
   const handleClick = buttonName => {
     return props.clickHandler(buttonName);
   };
