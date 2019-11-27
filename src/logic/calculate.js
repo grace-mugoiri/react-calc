@@ -2,7 +2,6 @@
 import operate from './operate';
 
 const calculate = ({ total, next, operation }, buttonName) => {
-  const operations = ['*', '+', '%', '÷'];
 
   switch (buttonName) {
   case '+/-':
@@ -28,6 +27,7 @@ const calculate = ({ total, next, operation }, buttonName) => {
     next = operate(next, null, buttonName);
     return { next };
 
+
   case '.':
     if (!next) {
       if (!total.includes('.')) {
@@ -49,8 +49,11 @@ const calculate = ({ total, next, operation }, buttonName) => {
       operation = '';
     }
     return { total, next, operation };
-  case operations:
-    total = total === 'Infin' ? '0' : total;
+  case '+':
+  case '-':
+  case '*':
+  case '÷':
+    total = total === 'INFINITY' ? '0' : total;
     if (operation && total && next) {
       total = operate(total, next, operation);
       next = '';
@@ -65,7 +68,7 @@ const calculate = ({ total, next, operation }, buttonName) => {
     }
     return { total, next, operation };
   default:
-    if (!operation && total ) {
+    if (!operation && total) {
       total = '';
     }
     if (!next) {

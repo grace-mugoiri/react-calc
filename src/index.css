@@ -50,6 +50,6 @@ code {
 	display: flex;
 	flex-direction: row;
 }
-.displayValue {
+.result {
 	width: 95%;
 }

@@ -5,16 +5,16 @@ class Display extends React.Component {
   render() {
     return (
       <div id='display'>
-        <div className='displayValue'>
-          {this.props.displayValue}
+        <div className='display'>
+          {this.props.result}
         </div>
       </div>
     );
   }
 }
 
-Display.propTypes = { displayValue: PropTypes.string };
+Display.propTypes = { result: PropTypes.string };
 
-Display.defaultProps = { displayValue: '0' };
+Display.defaultProps = { result: '0' };
 
 export default Display;
