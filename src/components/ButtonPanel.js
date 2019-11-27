@@ -2,8 +2,10 @@
 import React from 'react';
 import Button from './Button';
 
-const ButtonPanel = props => {
-  const handleClick = buttonName => props.clickHandler(buttonName);
+const ButtonPanel = (props) => {
+  const handleClick = buttonName => {
+    return props.clickHandler(buttonName);
+  };
   return (
     <div id='button-panel'>
       <div className='group-1'>

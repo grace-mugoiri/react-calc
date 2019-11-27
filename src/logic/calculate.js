@@ -27,6 +27,7 @@ const calculate = ({ total, next, operation }, buttonName) => {
     next = operate(next, null, buttonName);
     return { next };
 
+
   case '.':
     if (!next) {
       if (!total.includes('.')) {
