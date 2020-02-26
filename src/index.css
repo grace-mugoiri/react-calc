@@ -5,6 +5,7 @@
 	  sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-image: linear-gradient(to  bottom right, rgb(233, 216, 216), rgb(63, 34, 141));
 }
 
 code {
@@ -19,7 +20,6 @@ code {
 #app {
 	display: flex;
 	flex-direction: column;
-
 }
 #display {
 	display: flex;
@@ -27,12 +27,18 @@ code {
 	height: 100px;
 	font-weight: bold;
 	color: white;
-	padding: 5	px;
+	padding: 5px;
 	font-size: 40px;
 	text-align: right;
 	align-items: center;
 	justify-content: flex-end;
+	background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+	animation: slidebg 5s linear infinite;
 }
+@keyframes slidebg {
+	to {background-position: 20vw}
+}
+
 #button {
 	width: 25%;
 	font-size: 20px;
@@ -42,6 +48,7 @@ code {
 	border: 1px solid #bfbebe;
 	font-weight: bold;
 }
+
 .widthStyle {
 	flex: 2;
 }
@@ -50,6 +57,19 @@ code {
 	display: flex;
 	flex-direction: row;
 }
+#button-panel div[class*='group'] Button:hover {
+	background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+	animation: slidebg 5s linear infinite;
+}
+#button-panel div[class*='group'] Button:active {
+	background-color: orange;
+    transform: translateY(2px);
+}
+
+/* #button-panel div[class*=group] Button{
+
+} */
+
 .result {
 	width: 95%;
 }
